@@ -1,4 +1,4 @@
-<?php $this->extend("layout/layout.php"); ?>
+<?php $this->extend("layout/paperlayout.php"); ?>
 <style>
     .fb-profile {
         min-height: 950px;

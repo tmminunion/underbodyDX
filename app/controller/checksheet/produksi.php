@@ -9,7 +9,7 @@ class produksi extends Controller
 {
   public function index(){
     $data=[];
-    View("checksheet/produksi",$data);
+    View("checksheet/boardprod",$data);
   }
   
 }

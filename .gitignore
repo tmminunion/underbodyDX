@@ -1,0 +1,8 @@
+.env
+log/*
+
+vendor/
+/vendor/
+/.env
+log/
+

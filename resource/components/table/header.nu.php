@@ -36,7 +36,7 @@
         <td style="width: 1%;"></td>
         <th style="width: 10%;">Tanggal</th>
         <td style="width: 20%;" id="tanggal-display">
-            <input value="<?= $hari; ?>-<?= $bulan; ?>-<?= $tahun; ?>" type="text" class="form-control datepicker butonup" name="tgl_akhir" style="width: 100%; padding: 0.25rem 0.5rem; border: 0px solid #ced4da;">
+            <input value="<?= $tanggal; ?>" type="text" class="form-control datepicker butonup" name="tgl_akhir" style="width: 100%; padding: 0.25rem 0.5rem; border: 0px solid #ced4da;">
         </td>
         <td style="width: 2%;">
             <i class="fa fa-calendar" style="cursor:pointer;"></i>

@@ -1,7 +1,11 @@
 <?php
 
-use App\Core\Controller;
 use Carbon\Carbon;
+use App\Core\Controller;
+use App\Models\prod\AddLaporan;
+use App\Model\prod\ProduksiModel;
+use App\Model\prod\ProdAbsensiModel;
+
 
 class produksi extends Controller
 {
@@ -12,21 +16,45 @@ class produksi extends Controller
     $this->redirectToDaily($today->year, $today->month, $today->day);
   }
 
+
   public function harian($tahun, $bulan, $hari)
   {
     Carbon::setLocale('id');
     $date = Carbon::create($tahun, $bulan, $hari);
+
+    $tanggal = $date->format('Y-m-d');        // Format untuk DB
+    $kode_unik = $date->format('dmY');        // Format untuk Unique field
+
+    // Cek apakah laporan produksi sudah ada
+    $laporan = ProduksiModel::where('Tanggal', $tanggal)->first();
+
+    if (!$laporan) {
+      AddLaporan::addnew($kode_unik, $tanggal);
+      $laporan = ProduksiModel::where('Tanggal', $tanggal)->first();
+    }
+
+    // Ambil data absensi langsung dari kolom `date`, bukan via relasi
+    $absensi = ProdAbsensiModel::where('date', $tanggal)->get()->map(function ($a) {
+      return [
+        'id' => $a->id,
+        'Name' => $a->Name,
+        'Note' => $a->Note
+      ];
+    });
 
     $data = [
       'tahun' => $tahun,
       'bulan' => $bulan,
       'hari' => $hari,
       'namahari' => $date->isoFormat('dddd'),
-      'tanggal' => $date->format('d-m-Y')
+      'tanggal' => $date->format('d-m-Y'),
+      'laporan' => $laporan,
+      'absensi' => $absensi
     ];
 
-    View("checksheet/boardprod", $data);
+    return View("checksheet/boardprod", $data);
   }
+
 
   private function redirectToDaily($year, $month, $day)
   {

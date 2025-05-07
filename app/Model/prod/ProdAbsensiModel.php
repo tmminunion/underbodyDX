@@ -7,7 +7,7 @@ use App\Model\prod\ProduksiModel;
 use Illuminate\Database\Eloquent\Model;
 
 
-class ProdAbsensi extends Model
+class ProdAbsensiModel extends Model
 {
     protected $table = 'prod_absensi';
     protected $primaryKey = 'id';

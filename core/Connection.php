@@ -5,32 +5,23 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 $capsule = new Capsule;
 
 $capsule->addConnection([
-    'driver' => 'sqlite',
-    'database' => __DIR__ . '/database/database.sqlite',
-    'prefix' => '',
+    'driver'    => $_ENV['DB_CONNECTION'],
+    'host'      => $_ENV['DB_HOST'],
+    'port'      => $_ENV['DB_PORT'],
+    'database'  => $_ENV['DB_DATABASE'],
+    'username'  => $_ENV['DB_USERNAME'],
+    'password'  => $_ENV['DB_PASSWORD'],
+    'charset'   => $_ENV['DB_CHARSET'],
+    'collation' => $_ENV['DB_COLLATION'],
+    'prefix'    => '',
 ]);
-$capsule->addConnection([
-    'driver' => 'mysql',
-    'host' => 'localhost',
-    'database' => 'bunp2332_wp812',
-    'username' => 'bunp2332_wp812',
-    'password' => '6USS[!5f4p',
-    'charset' => 'utf8mb4',
-    'collation' => 'utf8mb4_unicode_ci', // tambahkan collation untuk menghindari masalah karakter
-    'prefix' => 'wpw6_',
-], 'mysqlwordpress'); // Nama koneksi
 
-$capsule->addConnection([
-    'driver' => 'mysql',
-    'host' => 'localhost',
-    'database' => 'bunp2332_auth',
-    'username' => 'DB_USER_KTA',
-    'password' => 'DB_PASS_KTA',
-    'charset' => 'utf8mb4',
-    'collation' => 'utf8mb4_unicode_ci', // tambahkan collation untuk menghindari masalah karakter
-], 'auth'); // Nama koneksi
 
+// $capsule->addConnection([
+//     'driver' => 'sqlite',
+//     'database' => __DIR__ . '/database/database.sqlite',
+//     'prefix' => '',
+// ]);
 
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
-//$capsule->table('imgclamps')->truncate();

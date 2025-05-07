@@ -37,7 +37,7 @@
         // Hitung skala agar pas dengan container (dengan margin 5px)
         scale = (containerWidth - 1) / a3WidthPx; // 10px untuk margin kiri+kanan
 
-       // applyTransform();
+        applyTransform();
       }
 
       // Panggil saat halaman dimuat dan di-resize

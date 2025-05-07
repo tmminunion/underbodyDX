@@ -101,7 +101,7 @@ background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, F
         padding: 10px;
         box-sizing: border-box;
       font-family: sans-serif;
-      font-size: 12px;
+      font-size: 15px;
         height: calc(100% - 40mm);
       }
 

@@ -1,14 +1,14 @@
    <table>
       <thead>
         <tr>
-          <th>No</th>
-          <th>Day Shift</th>
-          <th>Plan</th>
-          <th>Act</th>
-          <th>Diff</th>
-          <th>Line</th>
+          <th style="width:3%">No</th>
+          <th style="width:12%">Day Shift</th>
+          <th style="width:6%">Plan</th>
+          <th style="width:6%">Act</th>
+          <th style="width:6%">Diff</th>
+          <th style="width:12%">Line</th>
           <th>Problem</th>
-          <th>Countermeasure / Temp. Act</th>
+          <th style="width:20%">Countermeasure / Temp. Act</th>
         </tr>
       </thead>
       <tbody>
@@ -109,11 +109,12 @@
   <td style="text-align: right;">305</td>
   <td style="text-align: right;">-25</td>
 </tr>
-  <tr><td rowspan="2">11</td><td rowspan="2">18:15 - 19:15</td><td style="text-align: left;"></td><td style="text-align: left;"></td><td style="text-align: left;"></td><td rowspan="2">MST</td><td rowspan="2">ST-2 Body Fortuner not fix -3</td><td rowspan="2"></td></tr>
+  <tr><td rowspan="2">11</td><td rowspan="2">18:15 - 19:15</td>
+  <td style="text-align: left;">0</td><td style="text-align: left;">0</td><td style="text-align: left;">0</td><td rowspan="2">MST</td><td rowspan="2">ST-2 Body Fortuner not fix -3</td><td rowspan="2"></td></tr>
 <tr>
-  <td style="text-align: right;"></td>
-  <td style="text-align: right;"></td>
-  <td style="text-align: right;"></td>
+  <td style="text-align: right;">330</td>
+  <td style="text-align: right;">305</td>
+  <td style="text-align: right;">-25</td>
 </tr>
 
 

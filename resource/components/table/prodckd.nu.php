@@ -1,7 +1,7 @@
       <table class="inner">
         <thead>
            <tr>
-            <td colspan="4" class="bg-primary">UNIT PRODUKSI</td>
+            <td colspan="4" class="bg-primary">PRODUKSI CKD & SERVICE PART</td>
              </tr>
           <tr>
             <th style="width:10%">No</th>

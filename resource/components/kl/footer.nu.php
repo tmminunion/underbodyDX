@@ -14,71 +14,7 @@
 </div>
     <!-- Bootstrap JS + Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Generate checksheet table
-      const items = [
-        "Kebersihan Ruangan",
-        "Pengecekan Suhu",
-        "Stok Alat Tulis",
-        // Tambahkan item lainnya jika perlu
-      ];
-
-      const daysInMonth = 31;
-      const table = document.getElementById("checksheet-table");
-
-      // Buat header
-      const thead = document.createElement("thead");
-      const headerRow = document.createElement("tr");
-
-      const thItem = document.createElement("th");
-      thItem.textContent = "Item Check";
-      headerRow.appendChild(thItem);
-
-      for (let i = 1; i <= daysInMonth; i++) {
-        const th = document.createElement("th");
-        th.textContent = i;
-        headerRow.appendChild(th);
-      }
-
-      thead.appendChild(headerRow);
-      table.appendChild(thead);
-
-      // Buat isi tabel
-      const tbody = document.createElement("tbody");
-
-      items.forEach((item) => {
-        const row = document.createElement("tr");
-
-        const tdItem = document.createElement("td");
-        tdItem.textContent = item;
-        row.appendChild(tdItem);
-
-        for (let i = 1; i <= daysInMonth; i++) {
-          const td = document.createElement("td");
-
-          const span = document.createElement("span");
-          span.classList.add("icon");
-          span.textContent = "⚪"; // Default status
-
-          span.addEventListener("click", () => {
-            if (span.textContent === "⚪") {
-              span.textContent = "❌";
-            } else if (span.textContent === "❌") {
-              span.textContent = "✔️";
-            } else {
-              span.textContent = "⚪";
-            }
-          });
-
-          td.appendChild(span);
-          row.appendChild(td);
-        }
-
-        tbody.appendChild(row);
-      });
-
-      table.appendChild(tbody);
-    </script>
+  
     <script>
       const a3Page = document.getElementById("zoomable-a3");
       const panArea = document.getElementById("pan-area");
@@ -101,7 +37,7 @@
         // Hitung skala agar pas dengan container (dengan margin 5px)
         scale = (containerWidth - 1) / a3WidthPx; // 10px untuk margin kiri+kanan
 
-        applyTransform();
+       // applyTransform();
       }
 
       // Panggil saat halaman dimuat dan di-resize

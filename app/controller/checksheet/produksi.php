@@ -5,7 +5,7 @@ use App\Core\Controller;
 use App\Models\prod\AddLaporan;
 use App\Model\prod\ProduksiModel;
 use App\Model\prod\ProdAbsensiModel;
-
+use App\Model\prod\ProdissueModel;
 
 class produksi extends Controller
 {
@@ -32,7 +32,11 @@ class produksi extends Controller
       AddLaporan::addnew($kode_unik, $tanggal);
       $laporan = ProduksiModel::where('Tanggal', $tanggal)->first();
     }
-
+$issues = ProdissueModel::where('lap_id', $laporan->id)
+    ->orderBy('Nomer')
+    ->get()
+    ->groupBy('Nomer');
+    
     // Ambil data absensi langsung dari kolom `date`, bukan via relasi
     $absensi = ProdAbsensiModel::where('date', $tanggal)->get()->map(function ($a) {
       return [
@@ -49,7 +53,8 @@ class produksi extends Controller
       'namahari' => $date->isoFormat('dddd'),
       'tanggal' => $date->format('d-m-Y'),
       'laporan' => $laporan,
-      'absensi' => $absensi
+      'absensi' => $absensi,
+      'issues'=>$issues
     ];
 
     return View("checksheet/boardprod", $data);

@@ -13,6 +13,7 @@ class ProduksiSetting extends Model
     protected $fillable = [
         'key',
         'value',
+        'user_id',
         'description'
     ];
 

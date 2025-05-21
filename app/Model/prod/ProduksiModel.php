@@ -16,6 +16,7 @@ class ProduksiModel extends Model
         'Unique',
         'Line',
         'Pic',
+        'Line_id',
         'Shift',
         'Tanggal',
         'Takttime',

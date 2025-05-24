@@ -390,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "3d26768d8f745117e083a5c054b7f6c75219a522"
+                "reference": "0e5c566f7c15381126a6358aab838a0b9fb47b45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/3d26768d8f745117e083a5c054b7f6c75219a522",
-                "reference": "3d26768d8f745117e083a5c054b7f6c75219a522",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/0e5c566f7c15381126a6358aab838a0b9fb47b45",
+                "reference": "0e5c566f7c15381126a6358aab838a0b9fb47b45",
                 "shasum": ""
             },
             "require": {
@@ -447,7 +447,7 @@
                 "issues": "https://github.com/dompdf/dompdf/issues",
                 "source": "https://github.com/dompdf/dompdf/tree/master"
             },
-            "time": "2025-03-24T12:23:02+00:00"
+            "time": "2025-05-21T13:58:04+00:00"
         },
         {
             "name": "dompdf/php-font-lib",
@@ -546,12 +546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "e21d00be1fcca234e6a1dbec62b0d2d0358a376f"
+                "reference": "c5c3935a6d764e8b94dafb8001ba9f814b159411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e21d00be1fcca234e6a1dbec62b0d2d0358a376f",
-                "reference": "e21d00be1fcca234e6a1dbec62b0d2d0358a376f",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/c5c3935a6d764e8b94dafb8001ba9f814b159411",
+                "reference": "c5c3935a6d764e8b94dafb8001ba9f814b159411",
                 "shasum": ""
             },
             "require": {
@@ -609,7 +609,7 @@
                 "issues": "https://github.com/FakerPHP/Faker/issues",
                 "source": "https://github.com/FakerPHP/Faker/tree/2.0"
             },
-            "time": "2025-03-02T00:27:50+00:00"
+            "time": "2025-05-06T05:51:35+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -2541,12 +2541,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nufatID/Nutemplete.git",
-                "reference": "59b2e667ec68b67147091b7ec37aceca081e6d6d"
+                "reference": "dcfe1eb529336a17fddb59f2b99563bd5fd5640c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nufatID/Nutemplete/zipball/59b2e667ec68b67147091b7ec37aceca081e6d6d",
-                "reference": "59b2e667ec68b67147091b7ec37aceca081e6d6d",
+                "url": "https://api.github.com/repos/nufatID/Nutemplete/zipball/dcfe1eb529336a17fddb59f2b99563bd5fd5640c",
+                "reference": "dcfe1eb529336a17fddb59f2b99563bd5fd5640c",
                 "shasum": ""
             },
             "default-branch": true,
@@ -2571,9 +2571,9 @@
             "description": "untuk templete nuphp",
             "support": {
                 "issues": "https://github.com/nufatID/Nutemplete/issues",
-                "source": "https://github.com/nufatID/Nutemplete/tree/v1.0.4"
+                "source": "https://github.com/nufatID/Nutemplete/tree/v1.0.5"
             },
-            "time": "2024-06-23T06:58:41+00:00"
+            "time": "2025-05-20T07:39:59+00:00"
         },
         {
             "name": "overtrue/pinyin",
@@ -2736,12 +2736,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "c2a9649782ca214d817b25f0950a20a58aedb6bb"
+                "reference": "fcb5efc466b06efe62591eca08b5020cc12b502c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/c2a9649782ca214d817b25f0950a20a58aedb6bb",
-                "reference": "c2a9649782ca214d817b25f0950a20a58aedb6bb",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/fcb5efc466b06efe62591eca08b5020cc12b502c",
+                "reference": "fcb5efc466b06efe62591eca08b5020cc12b502c",
                 "shasum": ""
             },
             "require": {
@@ -2835,7 +2835,7 @@
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
                 "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/master"
             },
-            "time": "2025-05-01T15:04:24+00:00"
+            "time": "2025-05-23T19:06:51+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -4594,32 +4594,32 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "catfan/medoo": 20,
-        "dompdf/dompdf": 20,
-        "fakerphp/faker": 20,
-        "firebase/php-jwt": 20,
-        "guzzlehttp/guzzle": 20,
         "illuminate/database": 20,
-        "illuminate/support": 20,
+        "dompdf/dompdf": 20,
+        "guzzlehttp/guzzle": 20,
+        "firebase/php-jwt": 20,
         "illuminate/view": 20,
-        "lasserafn/php-initial-avatar-generator": 20,
-        "midtrans/midtrans-php": 20,
-        "nufat/cli": 20,
-        "nufat/nutemplete": 20,
-        "phpmailer/phpmailer": 20,
-        "phpoffice/phpspreadsheet": 20,
-        "picqer/php-barcode-generator": 20,
+        "illuminate/support": 20,
+        "catfan/medoo": 20,
+        "fakerphp/faker": 20,
         "symfony/cache-contracts": 20,
-        "symfony/deprecation-contracts": 20,
         "symfony/event-dispatcher-contracts": 20,
+        "symfony/deprecation-contracts": 20,
         "symfony/http-client-contracts": 20,
         "symfony/service-contracts": 20,
         "symfony/translation-contracts": 20,
-        "vlucas/phpdotenv": 20
+        "lasserafn/php-initial-avatar-generator": 20,
+        "nufat/cli": 20,
+        "nufat/nutemplete": 20,
+        "midtrans/midtrans-php": 20,
+        "vlucas/phpdotenv": 20,
+        "phpoffice/phpspreadsheet": 20,
+        "phpmailer/phpmailer": 20,
+        "picqer/php-barcode-generator": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }

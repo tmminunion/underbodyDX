@@ -1,5 +1,11 @@
 @extends("layout.paperlayout")
 
+<?php
+$this->block('title', 'Voice Member');
+
+?>
+
+
 <nu-voice-tbhead></nu-voice-tbhead>
 <br>
 <nu-voice-title>PIC : OPERATOR</nu-voice-title>

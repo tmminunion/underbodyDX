@@ -17,24 +17,13 @@ class voice extends Controller
   }
 
 
-  public function member($tahun, $bulan, $hari)
+  public function member()
   {
-    Carbon::setLocale('id');
-    $date = Carbon::create($tahun, $bulan, $hari);
-
-    $tanggal = $date->format('Y-m-d');        // Format untuk DB
-    $kode_unik = $date->format('dmY');        // Format untuk Unique field
 
 
 
-    $data = [
-      'tahun' => $tahun,
-      'bulan' => $bulan,
-      'hari' => $hari,
-      'namahari' => $date->isoFormat('dddd'),
-      'tanggal' => $date->format('d-m-Y'),
 
-    ];
+    $data = [];
 
     return View("checksheet/voicemember", $data);
   }

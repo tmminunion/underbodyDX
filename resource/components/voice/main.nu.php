@@ -1,18 +1,22 @@
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
 
-  <style>
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 6px;
-      text-align: center;
-      vertical-align: top;
-    }
-    th {
-      background-color: #f9f9f9;
-    }
-  </style>
+  th,
+  td {
+    padding: 6px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: rgb(255, 213, 0);
+  }
+</style>
 
 
 <table style="width: 100%;">
@@ -32,7 +36,7 @@
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-   
+
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -44,19 +48,18 @@
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    
+
   </tr>
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-   
+
   </tr>
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-   
+
   </tr>
 </table>
-

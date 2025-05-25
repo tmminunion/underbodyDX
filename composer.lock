@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "831f9af901e0050246ecb6df2333766a",
+    "content-hash": "d3ac7abedb867fb10b3ee0c1ca68153e",
     "packages": [
         {
             "name": "brick/math",
@@ -3366,6 +3366,57 @@
             "time": "2023-04-04T09:54:51+00:00"
         },
         {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
+            },
+            "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
             "name": "psr/simple-cache",
             "version": "dev-master",
             "source": {
@@ -4431,6 +4482,55 @@
             "time": "2024-09-25T14:20:29+00:00"
         },
         {
+            "name": "textalk/websocket",
+            "version": "1.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Textalk/websocket-php.git",
+                "reference": "d05dbaa97500176447ffb1f1800573f23085ab13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Textalk/websocket-php/zipball/d05dbaa97500176447ffb1f1800573f23085ab13",
+                "reference": "d05dbaa97500176447ffb1f1800573f23085ab13",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 | ^8.0",
+                "psr/log": "^1 | ^2 | ^3"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^8.0|^9.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebSocket\\": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Liljegren"
+                },
+                {
+                    "name": "Sören Jensen",
+                    "email": "soren@abicart.se"
+                }
+            ],
+            "description": "WebSocket client and server",
+            "support": {
+                "issues": "https://github.com/Textalk/websocket-php/issues",
+                "source": "https://github.com/Textalk/websocket-php/tree/1.5.8"
+            },
+            "time": "2022-04-26T06:28:24+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "dev-master",
             "source": {
@@ -4594,32 +4694,32 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "illuminate/database": 20,
-        "dompdf/dompdf": 20,
-        "guzzlehttp/guzzle": 20,
-        "firebase/php-jwt": 20,
-        "illuminate/view": 20,
-        "illuminate/support": 20,
         "catfan/medoo": 20,
+        "dompdf/dompdf": 20,
         "fakerphp/faker": 20,
+        "firebase/php-jwt": 20,
+        "guzzlehttp/guzzle": 20,
+        "illuminate/database": 20,
+        "illuminate/support": 20,
+        "illuminate/view": 20,
+        "lasserafn/php-initial-avatar-generator": 20,
+        "midtrans/midtrans-php": 20,
+        "nufat/cli": 20,
+        "nufat/nutemplete": 20,
+        "phpmailer/phpmailer": 20,
+        "phpoffice/phpspreadsheet": 20,
+        "picqer/php-barcode-generator": 20,
         "symfony/cache-contracts": 20,
-        "symfony/event-dispatcher-contracts": 20,
         "symfony/deprecation-contracts": 20,
+        "symfony/event-dispatcher-contracts": 20,
         "symfony/http-client-contracts": 20,
         "symfony/service-contracts": 20,
         "symfony/translation-contracts": 20,
-        "lasserafn/php-initial-avatar-generator": 20,
-        "nufat/cli": 20,
-        "nufat/nutemplete": 20,
-        "midtrans/midtrans-php": 20,
-        "vlucas/phpdotenv": 20,
-        "phpoffice/phpspreadsheet": 20,
-        "phpmailer/phpmailer": 20,
-        "picqer/php-barcode-generator": 20
+        "vlucas/phpdotenv": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }

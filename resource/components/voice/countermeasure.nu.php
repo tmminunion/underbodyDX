@@ -14,7 +14,7 @@
     <td class="italic">Line Head</td>
   </tr>
   <tr>
-    <td class="left" style="height:50px"></td>
+    <td class="left" style="height:30px"></td>
     <td></td>
   </tr>
   <tr>
@@ -28,7 +28,7 @@
     <td class="italic">Sect. Head</td>
   </tr>
   <tr>
-    <td class="left" style="height:50px"></td>
+    <td class="left" style="height:30px"></td>
     <td></td>
   </tr>
   <tr>
@@ -42,7 +42,7 @@
     <td class="italic">Dept. Head</td>
   </tr>
   <tr>
-    <td class="left" style="height:50px"></td>
+    <td class="left" style="height:30px"></td>
     <td></td>
   </tr>
   <tr>

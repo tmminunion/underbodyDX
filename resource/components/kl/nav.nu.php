@@ -28,3 +28,6 @@
         <div class="a3-page" id="zoomable-a3">
           <div class="pan-area" id="pan-area"></div>
           <div class="a3-content">
+            
+    <div class="report-container">
+        <!-- isi kontenmu di sini -->

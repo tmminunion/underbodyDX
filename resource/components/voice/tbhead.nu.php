@@ -26,7 +26,7 @@
     <td style="width: 8%;">Member</td>
   </tr>
   <tr>
-    <td style="width: 8%;height:30px;"></td>
+    <td style="width: 8%;"></td>
     <td style="width: 8%;"></td>
     <td style="width: 8%;"></td>
   </tr>

@@ -76,18 +76,19 @@ footer {
 .a3-container {
 
     position: relative;
+   /* width:429mm;
     width: calc(100% - 10px);
     /* 5px margin kiri + 5px kanan */
-    /* max-width: 297mm; */
-    max-width: 100vw;
+   /*max-width: 297mm; */
+    /*max-width: 100vw;
     /* Lebar A3 */
     margin: 5px;
 
 }
 
 .a3-page {
-    width: 100%;
-    height: 420mm;
+  width: 100%;
+    /*height: 420mm;
     /* Tinggi A3 */
     max-height: 420mm;
     background-color: white;
@@ -111,9 +112,7 @@ footer {
     z-index: 10;
 }
 .a3-content {
-
-    font-size: clamp(0.9rem, 1.2vw, 1.5rem);
-
+    font-size: clamp(1rem, 1.3vw, 1.6rem);
     padding: 10px;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -167,13 +166,13 @@ td:first-child {
     overflow-x: auto;
 }
 
-@media screen {
+/* @media screen {
     .a3-page {
         width: 100%;
         height: auto;
         aspect-ratio: 296 / 420;
     }
-}
+} */
 
 @media print {
     .a3-page {

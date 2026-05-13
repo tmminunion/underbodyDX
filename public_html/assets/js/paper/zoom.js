@@ -26,8 +26,8 @@ function calculateInitialScale() {
   const a3WidthPx = a3Width * 3.7795275590551;
 
   // Hitung skala agar pas dengan container (dengan margin 5px)
-  scale = (containerWidth - 1) / a3WidthPx; // 10px untuk margin kiri+kanan
-
+// scale = (containerWidth - 10) / a3WidthPx; // 10px untuk margin kiri+kanan
+console.log(scale);
   applyTransform();
 }
 
@@ -102,7 +102,8 @@ a3Page.addEventListener("touchend", () => {
 
 // Fungsi untuk mengaplikasikan transformasi zoom dan pan
 function applyTransform() {
-  a3Page.style.transform = `translate(${translate.x}px, ${translate.y}px) scale(${scale})`;
+ a3Page.style.transform = `translate(${translate.x}px, ${translate.y}px) scale(${scale})`;
+ console.log(a3Page.style.transform);
 }
 
 // Fungsi untuk tombol kontrol zoom
